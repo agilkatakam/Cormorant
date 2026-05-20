@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["topic", "decision", "audience", "framework", "thesis_hypothesis", "narrative_arc", "scope", "emphasis", "exclude", "created_at"],
+  "properties": {
+    "topic": {"type": "string", "minLength": 3},
+    "decision": {"type": "string", "minLength": 5},
+    "audience": {"type": "string"},
+    "framework": {
+      "type": "string",
+      "enum": [
+        "industry_competitive_landscape",
+        "market_research_trend_forecasting",
+        "gtm_strategy_development",
+        "feasibility_expansion_studies",
+        "strategic_benchmarking_opportunity_mapping",
+        "surveys_interviews_focus_groups",
+        "consumer_behaviour_analysis",
+        "data_visualisation_dashboarding",
+        "business_insights_reporting",
+        "kpi_performance_tracking",
+        "product_market_fit",
+        "brand_positioning_messaging",
+        "pricing_strategy_revenue_modeling",
+        "digital_marketing_social_media",
+        "influencer_campus_outreach",
+        "ai_assisted_market_competitive_research",
+        "predictive_trend_customer_analysis",
+        "ai_use_case_id",
+        "data_driven_decision_support",
+        "ai_readiness_adoption_assessment",
+        "workflow_process_optimisation",
+        "supply_chain_logistics",
+        "cost_reduction_efficiency",
+        "sop_process_documentation",
+        "execution_roadmap_development",
+        "sector_benchmarking_studies",
+        "policy_gap_analysis",
+        "msme_startup_ecosystem_research",
+        "economic_industry_opportunity_mapping",
+        "implementation_roadmaps_kpi"
+      ]
+    },
+    "thesis_hypothesis": {"type": "string"},
+    "narrative_arc": {
+      "type": "array",
+      "items": {"type": "string"},
+      "minItems": 2,
+      "maxItems": 5
+    },
+    "scope": {
+      "type": "object",
+      "required": ["geography", "time_horizon", "depth"],
+      "properties": {
+        "geography": {"type": "string"},
+        "time_horizon": {"type": "string"},
+        "depth": {"type": "string"}
+      }
+    },
+    "emphasis": {"type": "array", "items": {"type": "string"}},
+    "exclude": {"type": "array", "items": {"type": "string"}},
+    "strategic_focus": {"type": "string"},
+    "created_at": {"type": "string"}
+  }
+}

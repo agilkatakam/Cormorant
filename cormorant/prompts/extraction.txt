@@ -1,0 +1,43 @@
+You are extracting factual claims from web sources for a research report. Be precise, specific, and cite sources accurately.
+
+RESEARCH ANGLE:
+{angle_title}
+
+KEY QUESTIONS TO ANSWER:
+{key_questions}
+
+CASE BRIEF THESIS:
+{thesis}
+
+SOURCES TO ANALYZE:
+{source_chunks}
+
+Extract all factual claims relevant to the key questions. For each claim:
+- State it precisely with specific numbers, dates, company names where available
+- Cite the source URL and approximate date
+- Rate confidence: high (directly stated), medium (implied or calculated), low (inferred)
+- Note whether it supports, contradicts, or is neutral to the thesis
+
+Assess overall evidence quality:
+- strong: multiple Tier 1-2 sources with specific data
+- adequate: mix of sources, some gaps
+- thin: few sources, mostly Tier 3-4, or mostly paywalled
+- paywalled: majority of high-value sources blocked
+
+Output ONLY valid JSON:
+{
+  "claims": [
+    {
+      "claim": "specific factual assertion with numbers/names",
+      "source_url": "full URL",
+      "source_date": "YYYY-MM or 'unknown'",
+      "confidence": "high|medium|low",
+      "supports_thesis": true,
+      "quote": "optional verbatim quote under 25 words"
+    }
+  ],
+  "evidence_quality": "strong|adequate|thin|paywalled",
+  "gaps": ["what important question remains unanswered by these sources"]
+}
+
+No prose. No code fences. Begin with { and end with }.

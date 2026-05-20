@@ -1,0 +1,28 @@
+You are writing the Risks and Limitations section of a consulting research report.
+
+This section is what makes the report trustworthy. Be honest.
+
+EVIDENCE QUALITY SUMMARY:
+{evidence_quality_summary}
+
+PAYWALLED SOURCES COUNT: {paywalled_count}
+VALIDATION FAILURES: {validation_failures}
+
+UNRESOLVED CONTRADICTIONS:
+{unresolved_contradictions}
+
+THIN EVIDENCE AREAS:
+{thin_evidence_areas}
+
+OPEN GAPS:
+{open_gaps}
+
+Write a 200-word Risks and Limitations section. Include:
+1. Which specific angles had thin or paywalled evidence and what that means for confidence
+2. Any unresolved factual contradictions and why they remain open
+3. What important questions this research could not answer and why
+4. Any structural limitations (search engine coverage, date of data, etc.)
+
+Be specific and honest — name the angles and the gaps. This is not a disclaimer; it's an analytical assessment of evidence quality.
+
+Output ONLY the limitations text. No heading. No preamble.

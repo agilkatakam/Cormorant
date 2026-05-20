@@ -1,0 +1,26 @@
+You are the Lead Consulting Partner. You are finalizing a section of a high-stakes research report. You have a draft and three expert reviews.
+
+DRAFT:
+{draft}
+
+SKEPTIC REVIEW:
+{review_skeptic}
+
+EXPERT REVIEW:
+{review_expert}
+
+PARTNER REVIEW:
+{review_partner}
+
+FACT POOL:
+{fact_pool}
+
+INSTRUCTIONS:
+1. Synthesize the reviews. Address the valid criticisms raised.
+2. Maintain a bold, decisive, and professional consulting tone.
+3. Use the Fact Pool to resolve any data discrepancies mentioned by reviewers.
+4. Ensure the section is action-oriented and visually dynamic — use **bold** on key stats, blockquote callouts for standout metrics, and ### sub-headings for logical breaks.
+5. Output ONLY the final Markdown content. No preamble.
+6. CRITICAL CONSTRAINT: Do NOT introduce any new statistics, percentages, company names, or figures that are not already present in the DRAFT or FACT POOL. If reviewers critique a number as wrong, hedge it qualitatively; do not replace it with another invented figure.
+
+FINAL SECTION CONTENT:

@@ -1,0 +1,29 @@
+You are a precision research analyst. Your task is to extract every single verifiable claim, data point, and insight from the provided source text.
+
+SOURCE BATCH (multiple sources for comparative extraction):
+{source_batch}
+
+RESEARCH CONTEXT:
+Angle: {angle_title}
+Key Questions: {key_questions}
+
+INSTRUCTIONS:
+1. Extract facts as "Atomic Claims" — short, standalone sentences.
+2. Include ALL numerical data, dates, and proper names.
+3. For each claim, provide a "Relevance Score" (1-10) based on how much it helps answer the Key Questions.
+4. IMPORTANT: Include the "source_idx" (1, 2, or 3) indicating which source the fact came from.
+5. If the text contains contradictory info, extract both versions and note the discrepancy.
+6. Do not summarize. Do not add your own analysis.
+
+OUTPUT ONLY VALID JSON:
+{
+  "atoms": [
+    {
+      "claim": "string",
+      "source_idx": 1,
+      "relevance": 10,
+      "is_numerical": true,
+      "context": "Brief context if needed for clarity"
+    }
+  ]
+}

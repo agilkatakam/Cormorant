@@ -1,0 +1,22 @@
+You are formatting a bibliography for a consulting research report.
+
+SOURCE REGISTRY:
+{sources_registry}
+
+Format the bibliography as a tiered list:
+- Sort by tier (Tier 1 first, then 2, 3, 4)
+- Within each tier, sort by use_count descending (most-used sources first)
+- Deduplicate (each URL appears once)
+
+Format each entry as:
+[Tier N] domain.com — "Title" — YYYY-MM — URL
+
+Group under headers:
+## Primary Sources (Tier 1)
+## Specialist Sources (Tier 2)
+## Supporting Sources (Tier 3)
+## Community/Sentiment Sources (Tier 4)
+
+Only include tiers that have sources. Omit empty tier headers.
+
+Output ONLY the formatted bibliography markdown. No preamble.

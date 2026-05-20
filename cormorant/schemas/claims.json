@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["claims", "evidence_quality", "gaps"],
+  "properties": {
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["claim", "source_url", "source_date", "confidence", "supports_thesis"],
+        "properties": {
+          "claim": {"type": "string"},
+          "source_url": {"type": "string"},
+          "source_date": {"type": "string"},
+          "confidence": {"type": "string", "enum": ["high", "medium", "low"]},
+          "supports_thesis": {"type": ["boolean", "null"]},
+          "quote": {"type": "string"}
+        }
+      }
+    },
+    "evidence_quality": {
+      "type": "string",
+      "enum": ["strong", "adequate", "thin", "paywalled"]
+    },
+    "gaps": {"type": "array", "items": {"type": "string"}}
+  }
+}

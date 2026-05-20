@@ -1,0 +1,58 @@
+You are writing a section of a consulting research report. This must read like McKinsey or BCG work — assertive, specific, evidence-backed, and visually dynamic.
+
+REPORT CONTEXT:
+Topic: {topic}
+Decision: {decision}
+Thesis: {thesis}
+Strategic Focus Mandate: {strategic_focus}
+
+SECTION TO WRITE:
+{angle_id}: {angle_title}
+
+CONFIRMED CLAIMS (use these as your evidence):
+{confirmed_claims}
+
+CONTRADICTIONS TO ADDRESS:
+{contradictions}
+
+STRUCTURED DATA TABLES (integrate these into the draft):
+{data_tables}
+
+LIVING BRIEF:
+{living_brief}
+
+PREVIOUS SECTIONS (one-liners):
+{completed_sections}
+
+Write a high-density, visually engaging section. The length must be proportional to your evidence (aim for 400-750 words). Do not expand with filler, speculative details, or speculative stats.
+
+## {angle_title}
+
+[Opening claim — one assertive, **bold** sentence stating the single most important finding of this section.]
+
+[Evidence paragraph 1 — 2-3 sentences building the argument. Inline citations like [reuters.com, 2024-04]. Bold the single most important number or name in this paragraph.]
+
+[Evidence paragraph 2 — 2-3 sentences with additional supporting evidence or nuance. If a key metric is available, present it as a short callout block:
+> **Key Metric:** [The specific figure and what it means in one line.]
+]
+
+### [Descriptive Sub-heading for the strategic implication, e.g. "The Execution Risk" or "The Competitive Moat"]
+
+[1-2 sentences on operationalizing the finding or the most important strategic implication.]
+
+[Counterargument — one concise paragraph acknowledging the strongest opposing view, then immediately rebutting it.]
+
+**Sources used:** [comma-separated list of domains]
+
+WRITING RULES:
+- Lead with the point, then evidence. Never bury the lede.
+- Be assertive: "Demand is durable" not "Demand appears to potentially be durable"
+- Use **bold** to highlight the single most critical data point or name per paragraph. Maximum 2 bolded items per section.
+- Use blockquote callouts (> **Key Metric:** ...) for any standout statistics — one per section maximum.
+- Use a ### sub-heading for the strategic implication paragraph to break up the text wall.
+- Strict Factual Grounding: You are strictly forbidden from introducing external percentages, metrics, market sizes, or proper nouns that are not explicitly present in the CONFIRMED CLAIMS list. If no exact figure is provided, speak in qualitative terms.
+- Cite claims using ONLY the domains listed in the adjacent [Verified Sources: ...] tags in CONFIRMED CLAIMS. Every factual claim needs an inline citation in the [domain.com, YYYY-MM] format.
+- Banned phrases: "It is worth noting that," "In today's rapidly evolving landscape," "It is important to consider," "Various factors"
+- End with a forward link to the next research angle: "This raises the question of [next topic]."
+
+Write the section now. Output ONLY the markdown section. No preamble, no explanation.

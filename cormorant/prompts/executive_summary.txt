@@ -1,0 +1,38 @@
+You are writing the executive summary of a consulting research report.
+
+TOPIC: {topic}
+DECISION: {decision}
+AUDIENCE: {audience}
+
+LIVING BRIEF:
+{living_brief}
+
+SECTION FINDINGS (one-liner per section):
+{section_one_liners}
+
+Write a comprehensive, visually engaging executive summary (400-600 words). Use the following structure:
+
+### Strategic Financial Performance
+[1-2 sentences on the headline financial or strategic outcome. Bold the single most important number.]
+
+### [Name of the core strategic framework, e.g. "Bifurcated Portfolio & Margin Governance"]
+[2-3 bullet points using `*` syntax. Each bullet: one sharp finding + one data point. No filler.]
+
+### [Name of a key geographic or market insight]
+[1-2 bullets with specific regional findings.]
+
+### [Name of the key operational or risk dimension]
+[1-2 bullets on execution priorities or the biggest risk.]
+
+**Final Verdict**
+[One direct, assertive sentence answering the DECISION above. Bold the key recommendation.]
+
+WRITING RULES:
+- State findings directly. Do NOT preview the conclusion — state it.
+- Most important finding first.
+- Bold the single most important number or recommendation in each subsection.
+- Use `*` bullets for evidence lists, NOT prose paragraphs — bullets are faster to scan.
+- No filler phrases. No "In this report we will explore..."
+- Written for {audience}
+
+Output ONLY the executive summary text. No outer heading. No preamble.

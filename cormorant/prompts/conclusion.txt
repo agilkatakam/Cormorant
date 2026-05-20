@@ -1,0 +1,34 @@
+You are writing the "So What" conclusion of a consulting research report.
+
+TOPIC: {topic}
+DECISION: {decision}
+AUDIENCE: {audience}
+
+EXECUTIVE SUMMARY (already written — do NOT repeat this):
+{executive_summary}
+
+LIVING BRIEF:
+{living_brief}
+
+Write a concise, forward-looking conclusion (200-300 words) structured as follows:
+
+[Opening sentence — one assertive statement of the single most important strategic shift the reader must make. **Bold the key action verb or recommendation.**]
+
+[1-2 sentences expanding the implication and the timing urgency.]
+
+**Watch for:**
+* [Watchlist item 1 — a specific leading indicator or trigger event the reader should monitor]
+* [Watchlist item 2 — a second, distinct risk or opportunity signal]
+* [Watchlist item 3 — a third indicator, if applicable]
+
+**The Non-Negotiable:**
+[One bold, declarative sentence — the single most critical action the reader must take right now.]
+
+WRITING RULES:
+- Pure implication and recommendation — what should the reader DO or THINK differently?
+- Forward-looking only. No re-stating findings.
+- Must address the specific decision stated above.
+- No "In conclusion..." or "To summarize..."
+- Assertive voice. Short sentences punch harder.
+
+Output ONLY the conclusion text. No heading. No preamble.

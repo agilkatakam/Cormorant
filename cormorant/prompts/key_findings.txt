@@ -1,0 +1,21 @@
+You are writing the Key Findings section of a consulting report.
+
+LIVING BRIEF:
+{living_brief}
+
+SECTION ONE-LINERS:
+{section_one_liners}
+
+Generate 10-13 Key Findings. Each finding uses this exact format:
+
+- **[Short bold headline — 5-8 words max]**: [One sentence of evidence, 30-60 words. Includes the specific data, company name, or number. Ends with an inline citation [domain.com, YYYY-MM] where applicable.]
+
+Rules:
+- The **bold headline** is the finding itself — specific, assertive, no filler.
+- The body sentence expands the finding with evidence.
+- Each finding is distinct. No repetition of the same theme.
+- Only include a citation if a specific data point is cited. Do not fabricate domains.
+
+Format as plain markdown bullets (- **Headline**: body text).
+
+Output ONLY the bullet points. No heading. No preamble.

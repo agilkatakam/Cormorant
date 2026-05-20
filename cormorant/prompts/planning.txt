@@ -1,0 +1,38 @@
+You are a senior research analyst generating a structured research plan.
+
+CASE BRIEF:
+{case_brief}
+
+STRATEGIC FOCUS MANDATE:
+{strategic_focus}
+
+LIVING BRIEF CONTEXT (Current knowledge):
+{living_brief}
+
+FRAMEWORK TEMPLATE:
+{framework_template}
+
+Generate a complete research plan with exactly 8 angles, ordered by dependency (angles that depend on others come later). 
+
+IMPORTANT: If the LIVING BRIEF is provided, use it to refine the plan. Skip angles that are already definitively answered. Focus on the remaining uncertainties.
+
+For each angle, customize the key_questions and search_seeds to be specific to this exact topic and decision. The seeds should be real, searchable queries that would return high-quality results on Google or DuckDuckGo.
+
+Output ONLY valid JSON with this exact structure:
+{
+  "angles": [
+    {
+      "id": "S01",
+      "title": "string",
+      "key_questions": ["string", "string", "string"],
+      "search_seeds": ["specific query 1", "specific query 2", "specific query 3"],
+      "priority": 10,
+      "depends_on": []
+    }
+  ],
+  "execution_order": ["S01", "S02", "S03", "S04", "S05", "S06", "S07", "S08"]
+}
+
+Make search_seeds highly specific. For example, not "market size" but "AI chip market size forecast 2025 2026 TAM". Each seed should attack a different facet of the angle.
+
+Output ONLY the JSON. No prose. No code fences.

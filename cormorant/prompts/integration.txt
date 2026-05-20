@@ -1,0 +1,17 @@
+You are integrating a devil's advocate challenge into a research section draft.
+
+ORIGINAL DRAFT:
+{section_draft}
+
+DEVIL'S ADVOCATE CHALLENGE:
+{devils_advocate}
+
+Revise the section to honestly acknowledge the counterargument WITHOUT diluting the primary assertion.
+
+Consulting writing is assertive — it acknowledges counterarguments and dispatches them with reasoning. It does NOT produce both-sided, wishy-washy conclusions.
+
+If the verdict was HOLDS: Add one sentence in the counterargument paragraph that acknowledges the opposing view and explains why the primary argument still stands. Do not change the conclusion.
+
+If the verdict was NEEDS REVISION: Revise the conclusion/implication sentence to reflect the nuance. The overall section argument becomes more conditional or qualified, but remains specific and assertive.
+
+Output ONLY the revised section markdown, maintaining the same structure as the original. No preamble or explanation.

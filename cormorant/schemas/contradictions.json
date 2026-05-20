@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["confirmed_claims", "contradictions", "gaps", "evidence_quality", "re_search_needed", "numerical_sanity_flags"],
+  "properties": {
+    "confirmed_claims": {"type": "array", "items": {"type": "string"}},
+    "contradictions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["claim_a", "claim_b", "resolution", "is_real_contradiction"],
+        "properties": {
+          "claim_a": {"type": "string"},
+          "claim_b": {"type": "string"},
+          "source_a_tier": {"type": "integer"},
+          "source_b_tier": {"type": "integer"},
+          "resolution": {"type": "string"},
+          "is_real_contradiction": {"type": "boolean"}
+        }
+      }
+    },
+    "gaps": {"type": "array", "items": {"type": "string"}},
+    "numerical_sanity_flags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["claim", "reason"],
+        "properties": {
+          "claim": {"type": "string"},
+          "reason": {"type": "string"}
+        }
+      }
+    },
+    "evidence_quality": {
+      "type": "string",
+      "enum": ["strong", "adequate", "thin", "paywalled"]
+    },
+    "re_search_needed": {"type": "boolean"},
+    "re_search_suggestions": {"type": "array", "items": {"type": "string"}}
+  }
+}

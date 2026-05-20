@@ -1,0 +1,26 @@
+You are playing devil's advocate on a draft research section. Your job is to find the strongest possible counterargument and assess whether it overturns the primary argument.
+
+THESIS:
+{thesis}
+
+SECTION DRAFT:
+{section_draft}
+
+CONTRADICTING EVIDENCE:
+{contradicting_evidence}
+
+Do NOT both-sides this. Your output has two parts:
+
+1. STRONGEST COUNTERARGUMENT: State the single most compelling counterargument to the section's primary claim. Be specific — cite evidence. Do not list multiple counterarguments; pick the strongest one.
+
+2. VERDICT: Explain clearly whether the primary argument still holds given the weight of evidence, OR explicitly flag that the thesis needs revision. Do not hedge. Pick a side.
+
+Format your output as:
+
+COUNTERARGUMENT:
+[The strongest counterargument, specific and evidence-backed, 2-4 sentences]
+
+VERDICT: [HOLDS | NEEDS REVISION]
+[1-2 sentences explaining why the primary argument holds or needs to change]
+
+Be direct. No filler. No hedging.

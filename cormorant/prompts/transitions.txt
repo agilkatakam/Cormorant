@@ -1,0 +1,25 @@
+You are writing transition sentences between sections of a consulting report.
+
+SECTION SEQUENCE:
+{section_sequence}
+
+For each consecutive pair of sections, write one transition sentence that:
+- Ends the logic of the first section
+- Opens the question that the second section answers
+- Is one sentence, ~20-30 words
+- Is specific to the content (not generic like "Having examined X, we now turn to Y")
+
+Output ONLY valid JSON:
+{
+  "transitions": [
+    {"from": "S01", "to": "S02", "sentence": "transition text"},
+    {"from": "S02", "to": "S03", "sentence": "transition text"},
+    {"from": "S03", "to": "S04", "sentence": "transition text"},
+    {"from": "S04", "to": "S05", "sentence": "transition text"},
+    {"from": "S05", "to": "S06", "sentence": "transition text"},
+    {"from": "S06", "to": "S07", "sentence": "transition text"},
+    {"from": "S07", "to": "S08", "sentence": "transition text"}
+  ]
+}
+
+No prose. No code fences. Begin with { and end with }.

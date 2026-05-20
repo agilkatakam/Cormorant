@@ -1,0 +1,30 @@
+You are a senior strategy consultant and data visualisation expert. Your task is to generate a professional Mermaid.js diagram that visually maps the key structural findings of this research.
+
+TOPIC: {topic}
+DECISION: {decision}
+KEY FINDINGS SUMMARY:
+{key_findings}
+
+RESEARCH SECTIONS COMPLETED:
+{section_oneliners}
+
+Instructions:
+1. Choose the MOST APPROPRIATE diagram type for this research topic. Options:
+   - `graph LR` or `graph TD` — for value chains, process flows, or ecosystem maps
+   - `quadrantChart` — for 2x2 competitive positioning (e.g., Growth vs. Market Share)
+   - `flowchart TD` — for decision trees or strategic roadmaps
+2. The diagram MUST be syntactically valid Mermaid.js. Follow these strict rules:
+   - All node labels with parentheses, commas, or special characters MUST be wrapped in double quotes: `A["Label (Info)"]`
+   - Do NOT use HTML tags inside labels.
+   - Keep labels concise (max 6 words).
+   - Use a maximum of 12 nodes.
+3. Add meaningful relationship labels on arrows where applicable.
+4. Return ONLY the raw Mermaid.js code block contents (no ```mermaid fences, no prose, no explanations).
+
+Example of valid output:
+graph LR
+    A["Market Entry"] --> B["Distribution Channels"]
+    B --> C["Tier 1 Retail"]
+    B --> D["Direct-to-Consumer"]
+    C --> E["Revenue ($4.2B TAM)"]
+    D --> E

@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["consolidated_facts", "contradictions"],
+  "properties": {
+    "consolidated_facts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["claim", "importance", "category"],
+        "properties": {
+          "claim": {"type": "string"},
+          "importance": {"type": "integer", "minimum": 1, "maximum": 10},
+          "category": {"type": "string", "enum": ["foundational", "numerical", "contextual"]},
+          "sources": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "contradictions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["claim_a", "claim_b", "resolution_attempt"],
+        "properties": {
+          "claim_a": {"type": "string"},
+          "claim_b": {"type": "string"},
+          "resolution_attempt": {"type": "string"}
+        }
+      }
+    }
+  }
+}

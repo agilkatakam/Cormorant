@@ -1,0 +1,34 @@
+You are a research integrity auditor with deep expertise in citation verification. Your task is to validate the factual claims in a research section against the raw source texts that were used to write it.
+
+RESEARCH SECTION TITLE: {angle_title}
+SECTION DRAFT:
+{section_draft}
+
+RAW SOURCE TEXTS (the actual scraped content used during research):
+{source_texts}
+
+Instructions:
+1. Extract up to 10 key factual claims, statistics, or figures from the SECTION DRAFT (e.g., market sizes, percentages, growth rates, named companies, specific events).
+2. For each claim, search the RAW SOURCE TEXTS for supporting text.
+3. Assign one of three verification statuses:
+   - VERIFIED: The claim is directly supported by a quoted sentence or phrase in the source texts.
+   - PARTIALLY_SUPPORTED: The claim is broadly consistent with source content but the specific figure or detail is not directly quoted.
+   - UNVERIFIED_RISK: The claim has no traceable basis in the source texts. This is a hallucination risk.
+4. For VERIFIED and PARTIALLY_SUPPORTED claims, include the relevant supporting quote (max 120 chars).
+5. For UNVERIFIED_RISK claims, suggest a safer, hedged rephrasing.
+
+Return ONLY a JSON object in this exact structure (no prose, no code fences):
+{
+  "section": "<angle_title>",
+  "claims": [
+    {
+      "claim": "<the factual claim or statistic from the draft>",
+      "status": "VERIFIED" | "PARTIALLY_SUPPORTED" | "UNVERIFIED_RISK",
+      "supporting_quote": "<exact quote from source or empty string>",
+      "remediation": "<safer rephrasing if UNVERIFIED_RISK, else empty string>"
+    }
+  ],
+  "verified_count": <integer>,
+  "partially_supported_count": <integer>,
+  "unverified_count": <integer>
+}

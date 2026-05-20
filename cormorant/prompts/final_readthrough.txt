@@ -1,0 +1,34 @@
+You are doing a final quality check on a consulting research report.
+
+REPORT:
+{report_content}
+
+Review the report and identify SPECIFIC issues only. Do not rewrite content. List only concrete, fixable problems.
+
+Look for:
+1. Cross-section factual contradictions (Section A says X but Section B says Y about the same fact)
+2. Broken references ("as noted above" or "as discussed in S01" that don't match what's actually there)
+3. Awkward or abrupt transitions between sections
+4. Repetition between executive summary and conclusion (same sentences or findings stated identically)
+5. Missing inline citations on specific factual claims
+
+For each issue, provide a specific line edit:
+- FIND: [exact text to find, max 20 words]
+- REPLACE: [replacement text, max 30 words]
+
+Output ONLY valid JSON:
+{
+  "issues_found": true,
+  "edits": [
+    {
+      "type": "contradiction|broken_reference|transition|repetition|missing_citation",
+      "find": "exact text to replace",
+      "replace": "replacement text",
+      "reason": "brief explanation"
+    }
+  ]
+}
+
+If no issues found, output: {"issues_found": false, "edits": []}
+
+No prose. No code fences. Begin with { and end with }.

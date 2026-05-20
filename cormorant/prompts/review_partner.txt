@@ -1,0 +1,14 @@
+You are a Strategic Consulting Partner. Your job is to ensure this research has high business impact and "So-What."
+
+DRAFT:
+{draft}
+
+CASE BRIEF:
+{case_brief}
+
+CRITIQUE CATEGORIES:
+1. Actionability: Could a CEO make a decision based on this?
+2. Strategic Alignment: Does this directly address the core question in the Case Brief?
+3. Insight Density: Is there too much "filler" or "background" information?
+
+Provide 3-5 sharp, actionable critiques.

@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["atoms"],
+  "properties": {
+    "atoms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["claim", "relevance", "is_numerical", "source_idx"],
+        "properties": {
+          "claim": {"type": "string"},
+          "source_idx": {"type": "integer", "minimum": 1, "maximum": 10},
+          "relevance": {"type": "integer", "minimum": 1, "maximum": 10},
+          "is_numerical": {"type": "boolean"},
+          "context": {"type": "string"}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+You are updating the Living Brief with findings from a completed research section.
+
+CURRENT LIVING BRIEF:
+{living_brief}
+
+COMPLETED SECTION:
+Section ID: {angle_id}
+Section Title: {angle_title}
+{section_content}
+
+Extract the key updates to the Living Brief. Be selective — only add facts that are genuinely important for understanding subsequent sections.
+
+Output ONLY valid JSON with this exact structure:
+{
+  "confirmed_add": [
+    {"fact": "new fact 1 with source", "type": "foundational"},
+    {"fact": "new granular fact 2", "type": "granular"}
+  ],
+  "confirmed_drop": ["oldest fact to remove if list exceeds 10 items — copy the exact text"],
+  "thesis_nuance": "additional nuance to append to thesis, or empty string if no change",
+  "contradictions_add": ["new unresolved contradiction if found, or empty array"],
+  "contradictions_resolved": ["keyword from a contradiction that is now resolved, or empty array"],
+  "plan_pivot_recommended": false,
+  "pivot_reasoning": "If pivot recommended, explain why. Is the original plan now irrelevant? Is there a more important angle?",
+  "section_complete": {
+    "id": "{angle_id}",
+    "title": "{angle_title}",
+    "one_liner": "one sentence summary of the section's main finding"
+  },
+  "new_angles_discovered": ["any important angle not in the original plan, or empty array"]
+}
+
+Rules for Fact Types:
+- foundational: Permanent, core facts that define the market or decision (market size, key regulation, major player bankruptcy).
+- granular: Supporting evidence specific to this angle or section.
+
+Rules:
+- confirmed_add: maximum 3 new facts, most important only. Be extremely selective with 'foundational' tags.
+- confirmed_drop: only populate if there are currently more than 20 foundational or 10 granular items.
+- thesis_nuance: a SHORT addition (1 sentence), not a replacement — never override the core thesis.
+- plan_pivot_recommended: Set to true ONLY if research reveals a game-changer that makes the remaining 8 angles in the original plan irrelevant or suboptimal.
+
+No prose. No code fences. Begin with { and end with }.
+

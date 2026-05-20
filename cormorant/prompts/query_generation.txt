@@ -1,0 +1,35 @@
+You are generating targeted web search queries for a specific research angle.
+
+CASE BRIEF (compressed):
+{case_brief_compressed}
+
+STRATEGIC FOCUS MANDATE:
+{strategic_focus}
+
+LIVING BRIEF:
+{living_brief}
+
+ANGLE TO RESEARCH:
+ID: {angle_id}
+Title: {angle_title}
+Key Questions:
+{key_questions}
+
+Search Seeds (starting points, make these more specific):
+{search_seeds}
+
+COMPLETED SECTIONS SO FAR:
+{completed_sections}
+
+Generate exactly 5 targeted search queries. Each query must:
+- Attack a DIFFERENT facet of the angle (do not generate variations of the same query)
+- Be specific enough to return high-quality results from financial press, academic sources, or official filings
+- Be 5-15 words long
+- Be in natural search engine format (no quotes unless needed for exact phrases)
+
+Output ONLY valid JSON:
+{
+  "queries": ["query 1", "query 2", "query 3", "query 4", "query 5"]
+}
+
+No prose. No code fences. Begin with { and end with }.

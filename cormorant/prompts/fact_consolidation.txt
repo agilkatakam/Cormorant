@@ -1,0 +1,29 @@
+You are a Senior Data Architect. You have a "Fact Pool" containing hundreds of atomic claims from multiple sources. Your goal is to de-duplicate, resolve, and rank these facts.
+
+FACT POOL:
+{fact_pool}
+
+INSTRUCTIONS:
+1. De-duplicate identical or nearly identical claims.
+2. Resolve conflicts: If two sources disagree on a number, flag it as a "Contradiction" and explain the discrepancy.
+3. Ranking: Assign a "Global Importance" score (1-10). High scores go to facts that are "Case-Killers" or fundamental to the thesis.
+4. Categorization: Group facts into "Foundational" (permanent), "Numerical" (data-heavy), and "Contextual" (narrative).
+
+OUTPUT ONLY VALID JSON:
+{
+  "consolidated_facts": [
+    {
+      "claim": "string",
+      "importance": 10,
+      "category": "foundational|numerical|contextual",
+      "sources": ["source_id1", "source_id2"]
+    }
+  ],
+  "contradictions": [
+    {
+      "claim_a": "string",
+      "claim_b": "string",
+      "resolution_attempt": "Explanation of the disagreement"
+    }
+  ]
+}

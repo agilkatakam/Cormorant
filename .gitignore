@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.iml
+.DS_Store
+
+# Secrets / Keys
+.env
+*.env.*
+config.local.toml
+
+# Cormorant runtime data
+projects/
+~/.cormorant/
+*.log
+
+# Pytest / Ruff / mypy caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Reports and scratch files
+report_final.md
+report_draft.md
+scratch_project/
