@@ -43,3 +43,8 @@ htmlcov/
 report_final.md
 report_draft.md
 scratch_project/
+
+# Internal development docs (not needed by end users)
+cormorant.md
+cormorant_master_prompt.md
+cormorant_ascii.txt
