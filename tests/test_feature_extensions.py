@@ -15,7 +15,6 @@ Tests cover:
 from __future__ import annotations
 
 import json
-import textwrap
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
@@ -116,7 +115,6 @@ class TestRegisterCustomFramework:
             _CUSTOM_CATEGORY,
             CATEGORIES,
             FRAMEWORKS,
-            register_custom_framework,
         )
         fw_id = "test_fw_unique_xyz"
         fw_data = _make_valid_fw("Unique Test FW")
@@ -399,7 +397,6 @@ class TestCitationAuditMarkdown:
 
     def test_risk_score_low_threshold(self):
         """0 unverified / 10 total claims => LOW risk."""
-        from cormorant.compiler import _run_citation_audit
         # Test by simulating the calculation directly
         total_verified = 10
         total_partial = 0
